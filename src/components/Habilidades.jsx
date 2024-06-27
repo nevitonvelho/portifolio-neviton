@@ -6,7 +6,7 @@ export default function Habilidades(){
     return(
         <>
             <Container>
-                <div class={'contentHab'}>
+                <div class={'contentHab'} id="habilidades">
 
                 <div className="contentTextHabi">
                     <font>Habilidades</font>

@@ -14,12 +14,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .imgCapaHero img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	filter: gray;
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -158,9 +157,13 @@
 	color: #fff;
 }
 
+
+
 @media (max-width: 900px) {
     .contentHero {
-        grid-template-columns: 1fr; /* mudar para uma coluna em telas menores */
+        grid-template-columns: 1fr;
+        flex-wrap: wrap-reverse;
+        display: flex;
     }
 
     .contentText {

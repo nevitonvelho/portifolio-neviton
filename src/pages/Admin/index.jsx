@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Form, Button, Row, Col, Card } from 'react-bootstrap';
+import { Container, Form, Button, Card, Tabs, Tab } from 'react-bootstrap';
 import './style.css';
 
 export default function Admin() {
@@ -49,132 +49,137 @@ export default function Admin() {
 
     return (
         <Container>
-            <h2 className="text-center">Admin Page</h2>
+            <h2 className="text-center">Painel Administrativos</h2>
             <hr />
-
-            <section className="mb-4">
-                <h3>Informações Pessoas Sobre a Página</h3>
-                <Form>
-                    <Form.Group controlId="fullName">
-                        <Form.Label>Nome Completo</Form.Label>
-                        <Form.Control
-                            type="text"
-                            name="fullName"
-                            value={personalInfo.fullName}
-                            onChange={handlePersonalInfoChange}
-                        />
-                    </Form.Group>
-                    <Form.Group controlId="bio">
-                        <Form.Label>Bibliografia</Form.Label>
-                        <Form.Control
-                            as="textarea"
-                            rows={3}
-                            name="bio"
-                            value={personalInfo.bio}
-                            onChange={handlePersonalInfoChange}
-                        />
-                    </Form.Group>
-                    <Form.Group controlId="photo">
-                        <Form.Label>Photo URL</Form.Label>
-                        <Form.Control
-                            type="text"
-                            name="photo"
-                            value={personalInfo.photo}
-                            onChange={handlePersonalInfoChange}
-                        />
-                    </Form.Group>
-                    <Form.Group controlId="email">
-                        <Form.Label>E-mail</Form.Label>
-                        <Form.Control
-                            type="email"
-                            name="email"
-                            value={personalInfo.email}
-                            onChange={handlePersonalInfoChange}
-                        />
-                    </Form.Group>
-                    <Form.Group controlId="phone">
-                        <Form.Label>Telefone</Form.Label>
-                        <Form.Control
-                            type="text"
-                            name="phone"
-                            value={personalInfo.phone}
-                            onChange={handlePersonalInfoChange}
-                        />
-                    </Form.Group>
-                    <Form.Group controlId="socialLinks">
-                        <Form.Label>Social Links</Form.Label>
-                        <Form.Control
-                            type="text"
-                            name="socialLinks"
-                            value={personalInfo.socialLinks}
-                            onChange={handlePersonalInfoChange}
-                        />
-                    </Form.Group>
-                </Form>
-            </section>
-
-            <section className="mb-4">
-                <h3>Projetos</h3>
-                {projects.map((project, index) => (
-                    <Card key={index} className="mb-2">
-                        <Card.Body>
-                            <Form.Group controlId={`projectImage${index}`}>
-                                <Form.Label>Image URL</Form.Label>
+            <Tabs defaultActiveKey="personalInfo" id="admin-tabs">
+                <Tab eventKey="personalInfo" title="Informações Pessoais">
+                    <section className="mb-4">
+                        <h3>Informações Pessoais</h3>
+                        <Form>
+                            <Form.Group controlId="fullName">
+                                <Form.Label>Nome Completo</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="image"
-                                    value={project.image}
-                                    onChange={(e) => handleProjectChange(index, e)}
+                                    name="fullName"
+                                    value={personalInfo.fullName}
+                                    onChange={handlePersonalInfoChange}
                                 />
                             </Form.Group>
-                            <Form.Group controlId={`projectTitle${index}`}>
-                                <Form.Label>Titulo</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    name="title"
-                                    value={project.title}
-                                    onChange={(e) => handleProjectChange(index, e)}
-                                />
-                            </Form.Group>
-                            <Form.Group controlId={`projectDescription${index}`}>
-                                <Form.Label>Descrição</Form.Label>
+                            <Form.Group controlId="bio">
+                                <Form.Label>Biografia</Form.Label>
                                 <Form.Control
                                     as="textarea"
-                                    rows={2}
-                                    name="description"
-                                    value={project.description}
-                                    onChange={(e) => handleProjectChange(index, e)}
+                                    rows={3}
+                                    name="bio"
+                                    value={personalInfo.bio}
+                                    onChange={handlePersonalInfoChange}
                                 />
                             </Form.Group>
-                        </Card.Body>
-                    </Card>
-                ))}
-                <Button variant="primary" onClick={addProject}>
-                    Adicionar Projeto
-                </Button>
-            </section>
-
-            <section className="mb-4">
-                <h3>Habilidades</h3>
-                {skills.map((skill, index) => (
-                    <Card key={index} className="mb-2">
-                        <Card.Body>
-                            <Form.Group controlId={`skill${index}`}>
-                                <Form.Label>Habilidade</Form.Label>
+                            <Form.Group controlId="photo">
+                                <Form.Label>URL da Foto</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    name="skill"
-                                    value={skill.skill}
-                                    onChange={(e) => handleSkillChange(index, e)}
+                                    name="photo"
+                                    value={personalInfo.photo}
+                                    onChange={handlePersonalInfoChange}
                                 />
                             </Form.Group>
-                        </Card.Body>
-                    </Card>
-                ))}
-                <Button variant="primary" onClick={addSkill}>
-                    Adcionar Habilidade
-                </Button>
-            </section>
+                            <Form.Group controlId="email">
+                                <Form.Label>E-mail</Form.Label>
+                                <Form.Control
+                                    type="email"
+                                    name="email"
+                                    value={personalInfo.email}
+                                    onChange={handlePersonalInfoChange}
+                                />
+                            </Form.Group>
+                            <Form.Group controlId="phone">
+                                <Form.Label>Telefone</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    name="phone"
+                                    value={personalInfo.phone}
+                                    onChange={handlePersonalInfoChange}
+                                />
+                            </Form.Group>
+                            <Form.Group controlId="socialLinks">
+                                <Form.Label>Links Sociais</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    name="socialLinks"
+                                    value={personalInfo.socialLinks}
+                                    onChange={handlePersonalInfoChange}
+                                />
+                            </Form.Group>
+                        </Form>
+                    </section>
+                </Tab>
+                <Tab eventKey="projects" title="Projetos">
+                    <section className="mb-4">
+                        <h3>Projetos</h3>
+                        {projects.map((project, index) => (
+                            <Card key={index} className="mb-2">
+                                <Card.Body>
+                                    <Form.Group controlId={`projectImage${index}`}>
+                                        <Form.Label>URL da Imagem</Form.Label>
+                                        <Form.Control
+                                            type="text"
+                                            name="image"
+                                            value={project.image}
+                                            onChange={(e) => handleProjectChange(index, e)}
+                                        />
+                                    </Form.Group>
+                                    <Form.Group controlId={`projectTitle${index}`}>
+                                        <Form.Label>Título</Form.Label>
+                                        <Form.Control
+                                            type="text"
+                                            name="title"
+                                            value={project.title}
+                                            onChange={(e) => handleProjectChange(index, e)}
+                                        />
+                                    </Form.Group>
+                                    <Form.Group controlId={`projectDescription${index}`}>
+                                        <Form.Label>Descrição</Form.Label>
+                                        <Form.Control
+                                            as="textarea"
+                                            rows={2}
+                                            name="description"
+                                            value={project.description}
+                                            onChange={(e) => handleProjectChange(index, e)}
+                                        />
+                                    </Form.Group>
+                                </Card.Body>
+                            </Card>
+                        ))}
+                        <Button variant="primary" onClick={addProject}>
+                            Adicionar Projeto
+                        </Button>
+                    </section>
+                </Tab>
+                <Tab eventKey="skills" title="Habilidades">
+                    <section className="mb-4">
+                        <h3>Habilidades</h3>
+                        {skills.map((skill, index) => (
+                            <Card key={index} className="mb-2">
+                                <Card.Body>
+                                    <Form.Group controlId={`skill${index}`}>
+                                        <Form.Label>Habilidade</Form.Label>
+                                        <Form.Control
+                                            type="text"
+                                            name="skill"
+                                            value={skill.skill}
+                                            onChange={(e) => handleSkillChange(index, e)}
+                                        />
+                                    </Form.Group>
+                                </Card.Body>
+                            </Card>
+                        ))}
+                        <Button variant="primary" onClick={addSkill}>
+                            Adicionar Habilidade
+                        </Button>
+                    </section>
+                </Tab>
+            </Tabs>
         </Container>
     );
 }

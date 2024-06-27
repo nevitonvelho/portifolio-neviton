@@ -24,3 +24,7 @@
 .login-form .btn {
     padding: 10px;
 }
+
+#formBasicPassword{
+    margin-bottom: 1rem;
+}

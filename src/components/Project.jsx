@@ -7,16 +7,16 @@ import Col from 'react-bootstrap/Col';
 export default function Projetos(){
     return(
         <>
-            <section className="sec2">
-                <Container>
+            <section id="projetos" className="sec2">
+                <Container class='gridAll'>
 
                     <div class={'textProjetos'}  >
                         <h2>Meus projetos</h2>
                         <p>Se você tem uma ideia de aplicativo móvel que precisa ganhar vida ou um site que precisa de uma reformulação, estou aqui para transformar seus sonhos digitais em realidade.</p>
                     </div>
-                            <Row data-aos="zoom-in">
+                            <Row data-aos="zoom-in" class=' justify-content-center' >
                                 <Col>
-                                    <Card style={{ width: '18rem' }}>
+                                    <Card style={{ marginBottom: '1rem'}}>
                                         <Card.Img variant="top" src="Screenshot_2.png" />
                                         <Card.Body>
                                             <Card.Title>Grilazer</Card.Title>
@@ -30,7 +30,7 @@ export default function Projetos(){
                                     </Card>
                                 </Col>
                                 <Col >
-                                    <Card style={{ width: '18rem' }}>
+                                    <Card style={{ marginBottom: '1rem'}}>
                                         <Card.Img variant="top" src="Screenshot_1.png" />
                                         <Card.Body>
                                             <Card.Title>Criptocom</Card.Title>
@@ -44,7 +44,7 @@ export default function Projetos(){
                                     </Card>
                                 </Col>
                                 <Col>
-                                    <Card style={{ width: '18rem' }}>
+                                    <Card style={{ marginBottom: '1rem'}}>
                                         <Card.Img variant="top" src="Screenshot_3.png" />
                                         <Card.Body>
                                             <Card.Title>Aize</Card.Title>
@@ -58,7 +58,7 @@ export default function Projetos(){
                                     </Card>
                                 </Col>
                                 <Col>
-                                    <Card style={{ width: '18rem' }}>
+                                    <Card style={{ marginBottom: '1rem'}}>
                                         <Card.Img variant="top" src="Screenshot_4.png" />
                                         <Card.Body>
                                             <Card.Title>NewDetox</Card.Title>
