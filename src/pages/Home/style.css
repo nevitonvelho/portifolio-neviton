@@ -1,0 +1,196 @@
+.contentHero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2px;
+    padding: 32px 0;
+}
+
+.imgCapaHero {
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 22px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCapaHero img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contentText {
+    text-align: start;
+    font-size: 1.2em; /* fonte responsiva */
+    padding: 0 5vw 0 0; /* padding responsivo */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contentText h1 {
+    font-size: 3em; /* fonte responsiva */
+}
+
+.buttonTeste {
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 999px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 2rem;
+}
+
+.buttonTeste:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.buttonTeste:active {
+    outline: 0;
+}
+
+.buttonTeste:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+.textProjetos h2 {
+    font-size: 22px;
+}
+
+.textProjetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.textProjetos p {
+    font-size: 1.2em; /* fonte responsiva */
+}
+
+.sec2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: center;
+    padding: 42px 0;
+    background-color: #000000;
+	color: #fff;
+}
+
+.contentHab{
+	padding: 72px 0;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contentTextHabi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    text-align: center;
+    font-size: 1.2em; /* fonte responsiva */
+}
+
+.contentTextHabi .text2 {
+    font-size: 1.2em; /* fonte responsiva */
+}
+
+.cardHab{
+
+}
+
+.cardHab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(#464d55, #25292e);
+	border-radius: 999px;
+	padding: 2px;
+	height: 60px;
+	width: 60px;
+	color: #fff;
+}
+
+@media (max-width: 900px) {
+    .contentHero {
+        grid-template-columns: 1fr; /* mudar para uma coluna em telas menores */
+    }
+
+    .contentText {
+        font-size: 2.5vw; /* ajustar fonte para telas menores */
+    }
+    .contentText h1 {
+        font-size: 6vw; /* ajustar fonte para telas menores */
+    }
+
+    .textProjetos p {
+        font-size: 3.5vw; /* ajustar fonte para telas menores */
+    }
+
+    .textProjetos h2 {
+        font-size: 5vw; /* ajustar fonte para telas menores */
+    }
+
+    .contentTextHabi {
+        font-size: 3.5vw; /* ajustar fonte para telas menores */
+    }
+    .contentTextHabi .text2 {
+        font-size: 3.5vw; /* ajustar fonte para telas menores */
+    }
+	.imgCapaHero{
+		height: 50vh;
+	}
+}
+
+@media (max-width: 400px) {
+    .contentHero {
+        grid-template-columns: 1fr; /* uma coluna para telas muito pequenas */
+    }
+}

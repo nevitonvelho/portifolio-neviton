@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@heroicons/react": "^2.1.4",
+		"aos": "^2.3.4",
+		"bootstrap": "^5.3.3",
+		"preact": "^10.20.0",
+		"preact-iso": "^2.6.3",
+		"preact-render-to-string": "^6.5.5",
+		"preact-router": "^4.1.2",
+		"react-bootstrap": "^2.10.3"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.8.2",
+		"vite": "^5.2.2"
+	}
+}

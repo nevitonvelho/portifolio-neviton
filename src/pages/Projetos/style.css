@@ -1,0 +1,15 @@
+.imgProjeto{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 12px;
+
+}
+
+.imgProjeto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
