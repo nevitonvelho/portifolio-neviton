@@ -23,7 +23,7 @@ export default function Hero(){
             </div>
            </div>
             <div class={'imgCapaHero'}>
-                <img src="123.png" alt="Foto do Neviton Velho" />
+                <img src="123.jpg" alt="Foto do Neviton Velho" />
             </div>
           </section>
         </Container>
