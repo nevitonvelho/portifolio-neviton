@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './pages/Login/index.jsx';
 import Admin from './pages/Admin/index.jsx';
 import ProjetosSlug from './pages/Projetos/index.jsx';
-
+import 'remixicon/fonts/remixicon.css'
 
 export function App() {
 	return (

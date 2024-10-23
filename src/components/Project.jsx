@@ -17,7 +17,9 @@ export default function Projetos(){
                             <Row data-aos="zoom-in" class=' justify-content-center' >
                                 <Col>
                                     <Card style={{ marginBottom: '1rem'}}>
-                                        <Card.Img variant="top" src="Screenshot_2.png" />
+                                        <div className="imgContent"> 
+                                            <Card.Img variant="top" src="Screenshot_2.png" />
+                                        </div>
                                         <Card.Body>
                                             <Card.Title>Grilazer</Card.Title>
                                             <Card.Text>
@@ -31,7 +33,9 @@ export default function Projetos(){
                                 </Col>
                                 <Col >
                                     <Card style={{ marginBottom: '1rem'}}>
-                                        <Card.Img variant="top" src="Screenshot_1.png" />
+                                        <div className="imgContent">
+                                            <Card.Img variant="top" src="Screenshot_1.png" />
+                                        </div>
                                         <Card.Body>
                                             <Card.Title>Criptocom</Card.Title>
                                             <Card.Text>
@@ -45,11 +49,13 @@ export default function Projetos(){
                                 </Col>
                                 <Col>
                                     <Card style={{ marginBottom: '1rem'}}>
-                                        <Card.Img variant="top" src="Screenshot_3.png" />
+                                        <div className="imgContent">
+                                            <Card.Img class={'img'} variant="top" src="Screenshot_3.png" />
+                                        </div>
                                         <Card.Body>
-                                            <Card.Title>Aize</Card.Title>
+                                            <Card.Title>Automação RPA</Card.Title>
                                             <Card.Text>
-                                                Desenvolvimento de um blog feito com Wordpress
+                                                RPA para extrair informações de vendas mercadolivre
                                             </Card.Text>
                                             <a href="/projetos/aize">
                                                 <button class={'buttonTeste'} variant="primary">Saiba Mais</button>
@@ -59,11 +65,13 @@ export default function Projetos(){
                                 </Col>
                                 <Col>
                                     <Card style={{ marginBottom: '1rem'}}>
-                                        <Card.Img variant="top" src="Screenshot_4.png" />
+                                        <div className="imgContent">
+                                            <Card.Img variant="top" src="Screenshot_4.png" />
+                                        </div>
                                         <Card.Body>
                                             <Card.Title>NewDetox</Card.Title>
-                                            <Card.Text>
-                                            Projeto de feito para estudo da tecnologia next.js
+                                            <Card.Text >
+                                                Projeto de feito para estudo da tecnologia next.js
                                             </Card.Text>
                                             <a href="/projetos/newdetox">
                                                 <button class={'buttonTeste'} variant="primary">Saiba Mais</button>
