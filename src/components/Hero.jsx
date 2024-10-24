@@ -15,14 +15,20 @@ export default function Hero() {
       <Container id="sobre" className="secHero">
         <section className="contentHero">
           <div className="text">
+          <a class="github-button" href="https://github.com/nevitonvelho" data-size="large" aria-label="Follow @nevitonvelho on GitHub">Follow @nevitonvelho</a>
+          <script async defer src="https://buttons.github.io/buttons.js"></script>
+
             <div className="contentText" data-aos="fade-right">
               <h1>Bem-vindo ao meu Portfólio!</h1>
               <p>
                 Sou desenvolvedor Full Stack, focado em automação com RPA. Estou sempre aprendendo e aprimorando minhas habilidades em Playwright, Java, Python e Scala.
               </p>
-              <Nav.Link href="https://wa.me/46999784485">
-                <button className="buttonModern" role="button">Saiba Mais</button>
-              </Nav.Link>
+             
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+
             </div>
           </div>
           <div className="imgCapaHero" data-aos="fade-left">
