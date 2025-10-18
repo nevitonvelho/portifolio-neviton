@@ -10,7 +10,7 @@
 
   const projetos = [
     {
-      title: 'Site de gerenciamento de hotel desenvolvido em Next.js com Prisma, como projeto acadêmico.',
+      title: 'Gerenciamento de Hotel',
       description: 'Serviço completo de manutenção e desenvolvimento em WordPress com foco em performance e segurança.',
       image: '/Screenshot_2.png',
       link: '/projetos/grilazer',
@@ -18,7 +18,7 @@
       github: 'https://github.com/nevitonvelho/hotel-management'
     },
     {
-      title: 'GranaMais ReactNative',
+      title: 'GranaMais',
       description: 'App de gestão financeira desenvolvido com React Native e Expo.',
       image: '/Screenshot_1.png',
       link: '/projetos/criptocom',
