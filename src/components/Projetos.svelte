@@ -10,28 +10,28 @@
 
   const projetos = [
     {
-      title: 'Grilazer',
+      title: 'Site de gerenciamento de hotel desenvolvido em Next.js com Prisma, como projeto acadêmico.',
       description: 'Serviço completo de manutenção e desenvolvimento em WordPress com foco em performance e segurança.',
       image: '/Screenshot_2.png',
       link: '/projetos/grilazer',
-      tech: ['WordPress', 'PHP', 'JavaScript'],
-      github: 'https://github.com/nevitonvelho/grilazer'
+      tech: ['Nextjs', 'Reactjs', 'JavaScript'],
+      github: 'https://github.com/nevitonvelho/hotel-management'
     },
     {
-      title: 'Criptocom',
-      description: 'Plataforma moderna para acompanhamento de criptomoedas desenvolvida com Next.js e APIs financeiras.',
+      title: 'GranaMais ReactNative',
+      description: 'App de gestão financeira desenvolvido com React Native e Expo.',
       image: '/Screenshot_1.png',
       link: '/projetos/criptocom',
-      tech: ['Next.js', 'TypeScript', 'Tailwind'],
-      github: 'https://github.com/nevitonvelho/criptocom'
+      tech: ['Javascript', 'TypeScript', 'ReactNative'],
+      github: 'https://github.com/nevitonvelho/granamais'
     },
     {
-      title: 'Automação RPA',
+      title: 'Automação RPA Java',
       description: 'Sistema de automação para extração e análise de dados de vendas do MercadoLivre usando Playwright.',
       image: '/Screenshot_3.png',
       link: '/projetos/aize',
-      tech: ['Playwright', 'Python', 'RPA'],
-      github: 'https://github.com/nevitonvelho/rpa-mercadolivre'
+      tech: ['Playwright', 'Java', 'RPA'],
+      github: 'https://github.com/nevitonvelho/bot-mercadolivre'
     },
     {
       title: 'NewDetox',
@@ -39,7 +39,7 @@
       image: '/Screenshot_4.png',
       link: '/projetos/newdetox',
       tech: ['React', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/nevitonvelho/newdetox'
+      github: 'https://newdetox23.netlify.app/'
     }
   ];
 </script>
