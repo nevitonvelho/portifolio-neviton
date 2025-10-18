@@ -1,24 +1,27 @@
 {
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@heroicons/react": "^2.1.4",
-		"aos": "^2.3.4",
-		"bootstrap": "^5.3.3",
-		"preact": "^10.20.0",
-		"preact-iso": "^2.6.3",
-		"preact-render-to-string": "^6.5.5",
-		"preact-router": "^4.1.2",
-		"react-bootstrap": "^2.10.3",
-		"remixicon": "^4.4.0"
-	},
-	"devDependencies": {
-		"@preact/preset-vite": "^2.8.2",
-		"vite": "^5.2.2"
-	}
+  "name": "portifolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "@tsconfig/svelte": "^5.0.5",
+    "@types/node": "^24.6.0",
+    "svelte": "^5.39.6",
+    "svelte-check": "^4.3.2",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "aos": "^2.3.4",
+    "lucide-svelte": "^0.546.0",
+    "tailwindcss": "^4.1.14"
+  }
 }
